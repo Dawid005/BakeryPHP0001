@@ -20,12 +20,15 @@ Class Website{
         echo "<title>";
         echo $this->title;
         echo "</title>";
+        echo '<link rel="stylesheet" href="style.css" type="text/css" /> ';
         echo "</head>";
     }
 
     public function ShowBody(){
         echo "<body>\n";
         echo "You have to pay: $this->cost". "$";
+        echo '<div style="height:500px;"></div>';
+        echo '<a href="index.php">Go Home</a>';
         echo "</body>";
     }
 
